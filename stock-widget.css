@@ -2,14 +2,14 @@
    stock-widget.css
    Host alongside api.js — load on every page
    ============================================================ */
-
+ 
 /* ---------- Reset scoped to widget ---------- */
 #stock-widget, #stock-widget * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
+ 
 /* ---------- Container ---------- */
 #stock-widget {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -22,7 +22,7 @@
   width: 100%;
   margin: 16px 0;
 }
-
+ 
 /* ---------- Header bar ---------- */
 .sw-header {
   display: flex;
@@ -33,14 +33,14 @@
   background: #f7f8fa;
   border-bottom: 1px solid #e0e0e0;
 }
-
+ 
 .sw-title {
   font-size: 14px;
   font-weight: 600;
   color: #111;
   flex: 1;
 }
-
+ 
 .sw-exch {
   display: inline-block;
   font-size: 10px;
@@ -53,24 +53,24 @@
   margin-left: 6px;
   vertical-align: middle;
 }
-
+ 
 .sw-time {
   font-size: 11px;
   color: #666;
 }
-
+ 
 .sw-count {
   font-size: 11px;
   color: #999;
   white-space: nowrap;
 }
-
+ 
 /* ---------- Scrollable table wrapper ---------- */
 .sw-scroll {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
-
+ 
 /* ---------- Table ---------- */
 .sw-table {
   width: 100%;
@@ -78,11 +78,11 @@
   white-space: nowrap;
   font-size: 12.5px;
 }
-
+ 
 .sw-table thead tr {
   background: #f0f2f5;
 }
-
+ 
 .sw-table th {
   padding: 8px 10px;
   text-align: right;
@@ -94,44 +94,44 @@
   border-bottom: 1px solid #dde1e7;
   white-space: nowrap;
 }
-
+ 
 .sw-table th:first-child,
 .sw-table th:nth-child(2) {
   text-align: left;
 }
-
+ 
 .sw-table td {
   padding: 7px 10px;
   text-align: right;
   color: #222;
   border-bottom: 1px solid #f0f0f0;
 }
-
+ 
 .sw-table td:first-child,
 .sw-table td:nth-child(2) {
   text-align: left;
 }
-
+ 
 .sw-table tbody tr:hover {
   background: #f5f8ff;
 }
-
+ 
 .sw-table tbody tr:last-child td {
   border-bottom: none;
 }
-
+ 
 /* ---------- Symbol cell ---------- */
 .sw-sym {
   font-weight: 600;
   color: #1a1a1a;
   letter-spacing: 0.02em;
 }
-
+ 
 /* ---------- Change cells ---------- */
 .sw-pos { color: #0a7c3a; font-weight: 500; }
 .sw-neg { color: #c0392b; font-weight: 500; }
 .sw-neu { color: #666; }
-
+ 
 /* ---------- Loading state ---------- */
 .sw-loading {
   display: flex;
@@ -141,7 +141,7 @@
   color: #666;
   font-size: 13px;
 }
-
+ 
 .sw-spinner {
   display: inline-block;
   width: 16px;
@@ -151,16 +151,16 @@
   border-radius: 50%;
   animation: sw-spin 0.7s linear infinite;
 }
-
+ 
 @keyframes sw-spin { to { transform: rotate(360deg); } }
-
+ 
 /* ---------- Error state ---------- */
 .sw-err {
   padding: 20px;
   color: #c0392b;
   font-size: 13px;
 }
-
+ 
 /* ---------- Mobile: tighten up ---------- */
 @media (max-width: 600px) {
   .sw-table th,
@@ -170,20 +170,21 @@
   }
   .sw-title { font-size: 13px; }
 }
-
+ 
 /* ---------- Homepage multi-section grid ---------- */
 .sw-home-grid {
   display: flex;
   flex-direction: column;
   gap: 0;
 }
-
+ 
 .sw-home-section {
   border-bottom: 1px solid #e0e0e0;
 }
 .sw-home-section:last-child {
   border-bottom: none;
 }
+ 
 .sw-more {
   font-size: 11px;
   color: #1a56db;
@@ -191,3 +192,4 @@
   white-space: nowrap;
 }
 .sw-more:hover { text-decoration: underline; }
+ 
