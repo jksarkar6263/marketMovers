@@ -128,9 +128,9 @@
 }
 
 /* ---------- Change cells ---------- */
-.pos { color: #0a7c3a; font-weight: 500; }
-.neg { color: #c0392b; font-weight: 500; }
-.neu { color: #666; }
+.sw-pos { color: #0a7c3a; font-weight: 500; }
+.sw-neg { color: #c0392b; font-weight: 500; }
+.sw-neu { color: #666; }
 
 /* ---------- Loading state ---------- */
 .sw-loading {
